@@ -2,8 +2,9 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'next/navigation';
 import { fetchProperty } from '@/utils/requests';
-import PropertyHeaderImage from '@/components/PropertyHeaderImage';
 import Link from 'next/link';
+
+import PropertyHeaderImage from '@/components/PropertyHeaderImage';
 import PropertyDetails from '@/components/PropertyDetails';
 import { FaArrowLeft } from 'react-icons/fa';
 
@@ -44,7 +45,7 @@ const PropertyPage = () => {
           <section>
             <div className="container m-auto py-6 px-6">
               <Link
-                href="/properties.html"
+                href="/properties"
                 className="text-blue-500 hover:text-blue-600 flex items-center"
               >
                 <FaArrowLeft className="mr-2" /> Back to Properties
